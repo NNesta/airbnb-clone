@@ -9,10 +9,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet"/>
     <title>Document</title>
 </head>
-<body class="bg-white">
+<body class="bg-white scrollbar-hide">
    <nav class="py-4 top-0 sticky bg-white z-[100]">
-    <div class="border-b-[1px] h-20 w-full">
-    <div class="flex justify-between items-center mx-16 ">
+    <div class="hidden sm:block border-b-[1px] h-20 w-screen">
+    <div class="flex justify-between items-center sm:mx-16 ">
     <img class="h-8" src="img/bnb-logo.png.png" alt="airbnb logo">
     <div class="flex justify-between items-center border border-gray-200 p-3 rounded-full space-x-8 shadow-md hover:shadow-xl duration-300 easy-in">
         <h2 class="font-semibold items-center px-4">Anywhere</h2>
@@ -39,8 +39,26 @@
         </div>
     </div>
    </div>
-   <div class="flex mx-16 space-x-4 items-center pt-2 -mb-3 ">
-    <div class="flex overflow-x-auto scrollbar-hide">
+   <div class="flex items-center sm:hidden w-screen sm:mx-16 border-[1px] border-gray-300 rounded-full text-xs">
+    <span class="material-symbols-outlined">
+        search
+        </span>
+        <div class="">
+            <h1 class="font-semibold">Where to?</h1>
+            <ul class="flex items-center gap-2">
+                <li>Anywhere</li>
+                <p>.</p>
+                <li>Any week</li>
+                <p>.</p>
+                <li>Add guests</li>
+            </ul>
+        </div>
+        <span class="material-symbols-outlined">
+            tune
+            </span>
+   </div>
+   <div class="flex sm:mx-16 space-x-4 items-center pt-2 -mb-3 ">
+    <div class="flex overflow-x-auto scrollbar-hide max-w-screen">
         
         <div class="font-semibold text-sm flex flex-col items-center justify-centers px-4 ">
             <img class="h-8" src="img/omg.jpg" alt="">
@@ -109,8 +127,8 @@
         </div>
         
     </div>
-    <div class="flex gap-4">
-            <span class="material-symbols-outlined">
+    <div class="hidden sm:flex gap-4">
+            <span class="material-symbols-outlined border-[1px] border-gray-300 rounded-full hover:scale-110 hover:shadow-xl">
                 chevron_right
                 </span>
                 <span class="flex justify-between ">
@@ -123,13 +141,14 @@
         </div>
 </div>
    </nav>
-   <main class="mx-20 grid grid-cols-4 gap-y-4">
+   
+   <main class="sm:mx-20 max-w-screen grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-4">
   <div class="w-full p-4">
     <div class="relative group">
 
         <img class="h-56 rounded-xl" src="img/home-1.jpg" alt="">
         <i class="text-white absolute right-2 top-2 fa-regular fa-heart"></i>
-        <i class="text-black -z-10 group-hover:z-50 absolute right-2 top-[45%] h-8 w-8 rounded-full p-2 bg-white fa-solid fa-chevron-right"></i>
+        <i class="text-black -z-10 group-hover:z-50 absolute right-2 top-[45%] h-8 w-8 rounded-full p-2 bg-white fa-solid fa-chevron-right transform hover:scale-110 duration-300"></i>
     </div>
     <div class="flex justify-between items-start mt-4">
         <div class="">
@@ -147,7 +166,7 @@
 
         <img class="h-56 rounded-xl" src="img/home-2.jpeg" alt="">
         <i class="text-white absolute right-2 top-2 fa-regular fa-heart"></i>
-        <i class="text-black -z-10 group-hover:z-50 absolute right-2 top-[45%] h-8 w-8 rounded-full p-2 bg-white fa-solid fa-chevron-right"></i>
+        <i class="text-black -z-10 group-hover:z-50 absolute right-2 top-[45%] h-8 w-8 rounded-full p-2 bg-white fa-solid fa-chevron-right transform hover:scale-110 duration-300"></i>
     </div>
     <div class="flex justify-between items-start mt-4">
         <div class="">
@@ -165,7 +184,7 @@
 
         <img class="h-56 rounded-xl" src="img/home-3.jpg" alt="">
         <i class="text-white absolute right-2 top-2 fa-regular fa-heart"></i>
-        <i class="text-black -z-10 group-hover:z-50 absolute right-2 top-[45%] h-8 w-8 rounded-full p-2 bg-white fa-solid fa-chevron-right"></i>
+        <i class="text-black -z-10 group-hover:z-50 absolute right-2 top-[45%] h-8 w-8 rounded-full p-2 bg-white fa-solid fa-chevron-right transform hover:scale-110 duration-300"></i>
     </div>
     <div class="flex justify-between items-start mt-4">
         <div class="">
@@ -183,7 +202,7 @@
 
         <img class="h-56 rounded-xl" src="img/home-4.jpg" alt="">
         <i class="text-white absolute right-2 top-2 fa-regular fa-heart"></i>
-        <i class="text-black -z-10 group-hover:z-50 absolute right-2 top-[45%] h-8 w-8 rounded-full p-2 bg-white fa-solid fa-chevron-right"></i>
+        <i class="text-black -z-10 group-hover:z-50 absolute right-2 top-[45%] h-8 w-8 rounded-full p-2 bg-white fa-solid fa-chevron-right transform hover:scale-110 duration-300"></i>
     </div>
     <div class="flex justify-between items-start mt-4">
         <div class="">
@@ -201,7 +220,7 @@
 
         <img class="h-56 rounded-xl" src="img/home-5.jpg" alt="">
         <i class="text-white absolute right-2 top-2 fa-regular fa-heart"></i>
-        <i class="text-black -z-10 group-hover:z-50 absolute right-2 top-[45%] h-8 w-8 rounded-full p-2 bg-white fa-solid fa-chevron-right"></i>
+        <i class="text-black -z-10 group-hover:z-50 absolute right-2 top-[45%] h-8 w-8 rounded-full p-2 bg-white fa-solid fa-chevron-right transform hover:scale-110 duration-300"></i>
     </div>
     <div class="flex justify-between items-start mt-4">
         <div class="">
@@ -219,7 +238,7 @@
 
         <img class="h-56 rounded-xl" src="img/home-6.jpg" alt="">
         <i class="text-white absolute right-2 top-2 fa-regular fa-heart"></i>
-        <i class="text-black -z-10 group-hover:z-50 absolute right-2 top-[45%] h-8 w-8 rounded-full p-2 bg-white fa-solid fa-chevron-right"></i>
+        <i class="text-black -z-10 group-hover:z-50 absolute right-2 top-[45%] h-8 w-8 rounded-full p-2 bg-white fa-solid fa-chevron-right transform hover:scale-110 duration-300"></i>
     </div>
     <div class="flex justify-between items-start mt-4">
         <div class="">
@@ -237,7 +256,7 @@
 
         <img class="h-56 rounded-xl" src="img/home-7.jpeg" alt="">
         <i class="text-white absolute right-2 top-2 fa-regular fa-heart"></i>
-        <i class="text-black -z-10 group-hover:z-50 absolute right-2 top-[45%] h-8 w-8 rounded-full p-2 bg-white fa-solid fa-chevron-right"></i>
+        <i class="text-black -z-10 group-hover:z-50 absolute right-2 top-[45%] h-8 w-8 rounded-full p-2 bg-white fa-solid fa-chevron-right transform hover:scale-110 duration-300"></i>
     </div>
     <div class="flex justify-between items-start mt-4">
         <div class="">
@@ -255,7 +274,7 @@
 
         <img class="h-56 rounded-xl" src="img/home-8.jpg" alt="">
         <i class="text-white absolute right-2 top-2 fa-regular fa-heart"></i>
-        <i class="text-black -z-10 group-hover:z-50 absolute right-2 top-[45%] h-8 w-8 rounded-full p-2 bg-white fa-solid fa-chevron-right"></i>
+        <i class="text-black -z-10 group-hover:z-50 absolute right-2 top-[45%] h-8 w-8 rounded-full p-2 bg-white fa-solid fa-chevron-right transform hover:scale-110 duration-300"></i>
     </div>
     <div class="flex justify-between items-start mt-4">
         <div class="">
@@ -273,7 +292,7 @@
 
         <img class="h-56 rounded-xl" src="img/home-9.jpg" alt="">
         <i class="text-white absolute right-2 top-2 fa-regular fa-heart"></i>
-        <i class="text-black -z-10 group-hover:z-50 absolute right-2 top-[45%] h-8 w-8 rounded-full p-2 bg-white fa-solid fa-chevron-right"></i>
+        <i class="text-black -z-10 group-hover:z-50 absolute right-2 top-[45%] h-8 w-8 rounded-full p-2 bg-white fa-solid fa-chevron-right transform hover:scale-110 duration-300"></i>
     </div>
     <div class="flex justify-between items-start mt-4">
         <div class="">
@@ -291,7 +310,7 @@
 
         <img class="h-56 rounded-xl" src="img/home-10.jpg" alt="">
         <i class="text-white absolute right-2 top-2 fa-regular fa-heart"></i>
-        <i class="text-black -z-10 group-hover:z-50 absolute right-2 top-[45%] h-8 w-8 rounded-full p-2 bg-white fa-solid fa-chevron-right"></i>
+        <i class="text-black -z-10 group-hover:z-50 absolute right-2 top-[45%] h-8 w-8 rounded-full p-2 bg-white fa-solid fa-chevron-right transform hover:scale-110 duration-300"></i>
     </div>
     <div class="flex justify-between items-start mt-4">
         <div class="">
@@ -309,7 +328,7 @@
 
         <img class="h-56 rounded-xl" src="img/home-11.jpeg" alt="">
         <i class="text-white absolute right-2 top-2 fa-regular fa-heart"></i>
-        <i class="text-black -z-10 group-hover:z-50 absolute right-2 top-[45%] h-8 w-8 rounded-full p-2 bg-white fa-solid fa-chevron-right"></i>
+        <i class="text-black -z-10 group-hover:z-50 absolute right-2 top-[45%] h-8 w-8 rounded-full p-2 bg-white fa-solid fa-chevron-right transform hover:scale-110 duration-300"></i>
     </div>
     <div class="flex justify-between items-start mt-4">
         <div class="">
@@ -327,7 +346,7 @@
 
         <img class="h-56 rounded-xl" src="img/home-12.jpg" alt="">
         <i class="text-white absolute right-2 top-2 fa-regular fa-heart"></i>
-        <i class="text-black -z-10 group-hover:z-50 absolute right-2 top-[45%] h-8 w-8 rounded-full p-2 bg-white fa-solid fa-chevron-right"></i>
+        <i class="text-black -z-10 group-hover:z-50 absolute right-2 top-[45%] h-8 w-8 rounded-full p-2 bg-white fa-solid fa-chevron-right transform hover:scale-110 duration-300"></i>
     </div>
     <div class="flex justify-between items-start mt-4">
         <div class="">
@@ -342,8 +361,8 @@
   </div>
  
    </main>
-   <footer class="bottom-0 sticky bg-white border-gray-400 border-t-[1px] ">
-    <div class="mx-16 w-[92%] flex justify-between pr-16">
+   <footer class="hidden sm:block bottom-0 sticky bg-white border-gray-400 border-t-[1px]  p-2">
+    <div class="sm:mx-16 w-[92%] flex justify-between pr-16">
     <div class="flex text-gray-500 pb-2 gap-4 items-center">
   <h1 class="">© 2022 Airbnb, Inc.</h1>
   <p>.</p>
